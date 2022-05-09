@@ -14596,7 +14596,7 @@ We are analyzing the data from 2010 to 2017 for this part of the tutorial.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -14627,12 +14627,12 @@ We are analyzing the data from 2010 to 2017 for this part of the tutorial.</p>
 
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Because we have every year&#39;s data in one file, some years&#39; data is even divided into 4 files (Q1-Q4),</span>
@@ -14648,62 +14648,12 @@ We are analyzing the data from 2010 to 2017 for this part of the tutorial.</p>
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>[&#39;./data/2010.csv&#39;,
- &#39;./data/2011.csv&#39;,
- &#39;./data/2012Q1.csv&#39;,
- &#39;./data/2012Q2.csv&#39;,
- &#39;./data/2012Q3.csv&#39;,
- &#39;./data/2012Q4.csv&#39;,
- &#39;./data/2013Q1.csv&#39;,
- &#39;./data/2013Q2.csv&#39;,
- &#39;./data/2013Q3.csv&#39;,
- &#39;./data/2013Q4.csv&#39;,
- &#39;./data/2014Q1.csv&#39;,
- &#39;./data/2014Q2.csv&#39;,
- &#39;./data/2014Q3.csv&#39;,
- &#39;./data/2014Q4.csv&#39;,
- &#39;./data/2015Q1.csv&#39;,
- &#39;./data/2015Q2.csv&#39;,
- &#39;./data/2015Q3.csv&#39;,
- &#39;./data/2015Q4.csv&#39;,
- &#39;./data/2016Q1.csv&#39;,
- &#39;./data/2016Q2.csv&#39;,
- &#39;./data/2016Q3.csv&#39;,
- &#39;./data/2016Q4.csv&#39;,
- &#39;./data/2017Q1.csv&#39;,
- &#39;./data/2017Q2.csv&#39;,
- &#39;./data/2017Q3.csv&#39;,
- &#39;./data/2017Q4.csv&#39;]</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Checking all the attributes (columns) of the data, the names are explainatory.</span>
@@ -14715,135 +14665,65 @@ We are analyzing the data from 2010 to 2017 for this part of the tutorial.</p>
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Data-Cleaning:">Data Cleaning:<a class="anchor-link" href="#Data-Cleaning:">&#182;</a></h3><p>At this part of the tutorial, we will do our best to “fix-up” the data. After the process, the data should be organized so that it is readable and easy to analyze. We will achieve this by manipulating our DataFrame’s columns and rows.</p>
 
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Duration</th>
-      <th>Start date</th>
-      <th>End date</th>
-      <th>Start station number</th>
-      <th>Start station</th>
-      <th>End station number</th>
-      <th>End station</th>
-      <th>Bike number</th>
-      <th>Member type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1012</td>
-      <td>2010-09-20 11:27:04</td>
-      <td>2010-09-20 11:43:56</td>
-      <td>31208</td>
-      <td>M St &amp; New Jersey Ave SE</td>
-      <td>31108</td>
-      <td>4th &amp; M St SW</td>
-      <td>W00742</td>
-      <td>Member</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>61</td>
-      <td>2010-09-20 11:41:22</td>
-      <td>2010-09-20 11:42:23</td>
-      <td>31209</td>
-      <td>1st &amp; N St  SE</td>
-      <td>31209</td>
-      <td>1st &amp; N St  SE</td>
-      <td>W00032</td>
-      <td>Member</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>2690</td>
-      <td>2010-09-20 12:05:37</td>
-      <td>2010-09-20 12:50:27</td>
-      <td>31600</td>
-      <td>5th &amp; K St NW</td>
-      <td>31100</td>
-      <td>19th St &amp; Pennsylvania Ave NW</td>
-      <td>W00993</td>
-      <td>Member</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>1406</td>
-      <td>2010-09-20 12:06:05</td>
-      <td>2010-09-20 12:29:32</td>
-      <td>31600</td>
-      <td>5th &amp; K St NW</td>
-      <td>31602</td>
-      <td>Park Rd &amp; Holmead Pl NW</td>
-      <td>W00344</td>
-      <td>Member</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>1413</td>
-      <td>2010-09-20 12:10:43</td>
-      <td>2010-09-20 12:34:17</td>
-      <td>31100</td>
-      <td>19th St &amp; Pennsylvania Ave NW</td>
-      <td>31201</td>
-      <td>15th &amp; P St NW</td>
-      <td>W00883</td>
-      <td>Member</td>
-    </tr>
-  </tbody>
-</table>
 </div>
 </div>
-
-</div>
-
-</div>
-
-</div>
-
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Because we want to hold the original data, we will do all our processing with data_cp!</span>
+<span class="n">data_cp</span> <span class="o">=</span> <span class="n">data</span>
+
+<span class="c1"># Checking every columns&#39; type</span>
+<span class="c1"># We realize &quot;Start date&quot; and &quot;End date&quot; are not DateTime Objects. We will change them!</span>
+<span class="n">data_cp</span><span class="o">.</span><span class="n">dtypes</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>In our case of bike-sharing data, the first thing we realize is our “Start date” and “End date” columns are not DateTime objects, which is a type of object that gives us easy access to the year, month, date, and time of the data. We will transform the two columns with pandas.to_datetime function.</p>
+<p>After that, to identify which year is each row representing, we will extract the year from "Start date" column for every row, and create a new column showing us the year. This will also make actions like grouping data by year easier later. Finally, we will create new columns “Day”, "Hour", and “Month” to indicate the data’s day of week, hour, and month. All these extra data will come in handy later when we try to analyze what day of the week people use bike-sharing services the most, for example, easier. We can always add more columns if needed later.</p>
+<p>More information about DateTime can be found here: <a href="https://docs.python.org/3/library/datetime.html">https://docs.python.org/3/library/datetime.html</a></p>
+<p>More information about pandas.to_datetime can be found here: <a href="https://pandas.pydata.org/docs/reference/api/pandas.to_datetime.html">https://pandas.pydata.org/docs/reference/api/pandas.to_datetime.html</a></p>
+
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># We are converting &#39;Start date&#39; and &#39;End date&#39; columns to pandas DateTime objects. This way we can extract year, month, day, and time easily.</span>
-<span class="n">data</span><span class="p">[</span><span class="s1">&#39;Start date&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;Start date&#39;</span><span class="p">])</span>
-<span class="n">data</span><span class="p">[</span><span class="s1">&#39;End date&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;End date&#39;</span><span class="p">])</span>
+<span class="n">data_cp</span><span class="p">[</span><span class="s1">&#39;Start date&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">data_cp</span><span class="p">[</span><span class="s1">&#39;Start date&#39;</span><span class="p">])</span>
+<span class="n">data_cp</span><span class="p">[</span><span class="s1">&#39;End date&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">data_cp</span><span class="p">[</span><span class="s1">&#39;End date&#39;</span><span class="p">])</span>
 <span class="c1"># Now we are adding a column called &#39;Year&#39; to our DataFrame, so we can group our data by year easily.</span>
-<span class="n">data</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DatetimeIndex</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;Start date&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">year</span>
+<span class="n">data_cp</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DatetimeIndex</span><span class="p">(</span><span class="n">data_cp</span><span class="p">[</span><span class="s1">&#39;Start date&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">year</span>
+<span class="c1"># Adding the &quot;Day&quot; column indicating day-of-week</span>
+<span class="n">data_cp</span><span class="p">[</span><span class="s1">&#39;Day&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Start date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">day_name</span><span class="p">()</span>
+<span class="c1"># Adding the &quot;Hour&quot; column indicating hour of the day</span>
+<span class="n">data_cp</span><span class="p">[</span><span class="s1">&#39;Hour&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Start date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">hour</span>
+<span class="c1"># Adding the &quot;Month&quot; column indicating month</span>
+<span class="n">data_cp</span><span class="p">[</span><span class="s1">&#39;Month&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Start date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">month</span>
 </pre></div>
 
      </div>
@@ -14856,11 +14736,10 @@ We are analyzing the data from 2010 to 2017 for this part of the tutorial.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Checking all the columns for our transformed data.</span>
-<span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data_cp</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -14878,7 +14757,7 @@ We are analyzing the data from 2010 to 2017 for this part of the tutorial.</p>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
 
 
 
@@ -14911,6 +14790,9 @@ We are analyzing the data from 2010 to 2017 for this part of the tutorial.</p>
       <th>Bike number</th>
       <th>Member type</th>
       <th>Year</th>
+      <th>Day</th>
+      <th>Hour</th>
+      <th>Month</th>
     </tr>
   </thead>
   <tbody>
@@ -14926,6 +14808,9 @@ We are analyzing the data from 2010 to 2017 for this part of the tutorial.</p>
       <td>W00742</td>
       <td>Member</td>
       <td>2010</td>
+      <td>Monday</td>
+      <td>11</td>
+      <td>9</td>
     </tr>
     <tr>
       <th>1</th>
@@ -14939,6 +14824,9 @@ We are analyzing the data from 2010 to 2017 for this part of the tutorial.</p>
       <td>W00032</td>
       <td>Member</td>
       <td>2010</td>
+      <td>Monday</td>
+      <td>11</td>
+      <td>9</td>
     </tr>
     <tr>
       <th>2</th>
@@ -14952,6 +14840,9 @@ We are analyzing the data from 2010 to 2017 for this part of the tutorial.</p>
       <td>W00993</td>
       <td>Member</td>
       <td>2010</td>
+      <td>Monday</td>
+      <td>12</td>
+      <td>9</td>
     </tr>
     <tr>
       <th>3</th>
@@ -14965,6 +14856,9 @@ We are analyzing the data from 2010 to 2017 for this part of the tutorial.</p>
       <td>W00344</td>
       <td>Member</td>
       <td>2010</td>
+      <td>Monday</td>
+      <td>12</td>
+      <td>9</td>
     </tr>
     <tr>
       <th>4</th>
@@ -14978,6 +14872,9 @@ We are analyzing the data from 2010 to 2017 for this part of the tutorial.</p>
       <td>W00883</td>
       <td>Member</td>
       <td>2010</td>
+      <td>Monday</td>
+      <td>12</td>
+      <td>9</td>
     </tr>
   </tbody>
 </table>
@@ -14990,6 +14887,67 @@ We are analyzing the data from 2010 to 2017 for this part of the tutorial.</p>
 
 </div>
 
+</div>
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Checking Missing Data</p>
+<p>After adding the columns we need, we will check if there are any missing data (e.g. NaN). If NaN exist for any columns, we would drop them in our case, because it makes that row of data useless. However, we are lucky that there is no NaN value presented!</p>
+
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Checking for NaN value!</span>
+<span class="n">nan_in_df</span> <span class="o">=</span> <span class="n">data_cp</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="c1"># printing the number of values present in</span>
+<span class="c1"># the whole dataframe</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of NaN values present: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">nan_in_df</span><span class="p">))</span>
+
+<span class="c1"># We are done cleaning data!</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Number of NaN values present: 0
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Data-Analysis:">Data Analysis:<a class="anchor-link" href="#Data-Analysis:">&#182;</a></h3>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
